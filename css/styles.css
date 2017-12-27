@@ -420,12 +420,6 @@ p:last_of-type{
 	margin: 1em;
 }
 
-@media (min-width: 37rem) {
-	.port-item{
-		width: 50%;
-		float: left;
-	}
-}
 
 @media (min-width: 60rem) {
 	.port-item{
@@ -437,6 +431,13 @@ p:last_of-type{
 	}
 	.port-item:hover .port-desc{
 		transform: translate(0%);
+	}
+}
+
+@media (min-width: 37rem) {
+	.port-item{
+		width: 50%;
+		float: left;
 	}
 }
 
