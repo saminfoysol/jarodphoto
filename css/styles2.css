@@ -1,0 +1,53 @@
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+
+
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    height: 100%;
+}
+
+.item:nth-child(1) {
+    background-image : url(https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252_1280.jpg);
+}
+
+.item:nth-child(2) {
+    background-image: url(https://www.planwallpaper.com/static/images/black_background_wood-wallpaper-1920x1200.jpg);
+}
+
+.item:nth-child(3) {
+    background-image: url(http://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+}
