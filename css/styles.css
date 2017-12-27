@@ -260,23 +260,18 @@ p:last_of-type{
 		
 	}
 
-	.home-about-textbox {
-
-		background-size:contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		opacity:0;
-		margin-left: -19.5%;
-		text-align: left;
-		width: 100vh;
-		height: 100vh;
+	.home-about-info{
+		transition:initial;
+		color: black;
+		text-align: center;
+		vertical-align: middle;
+		position:relative;
+		top: 50%;
+		transform: translateY(-50%); 
 		
-		
-		
-		background-image: url(../img/dantebio2.jpg);
-	
-		position:absolute;
 	}
+
+
 
 @media (min-width:60rem){
 	.newbox{
@@ -316,23 +311,10 @@ p:last_of-type{
 		padding-right:4em;
 	}
 
-	.home-about-dante {
 
-		display:none;
-		color:black;
-		width: 50%;
-		float:right;
-		text-align: center;
-		right:0;
-		position:relative;
-		
-	}
 
 
 }
-	.home-about-dante h1{
-		font-size: 3em;
-	}
 
 	
 
@@ -341,12 +323,6 @@ p:last_of-type{
 	.home-about-textbox{
 		display:none;
 	}
-	.home-about-dante{
-		color:black;
-		text-align:center;
-		padding-top:10em;
-		position:absolute;
-	}
 
 }
 
@@ -354,11 +330,7 @@ p:last_of-type{
 	.home-about-textbox{
 		display:none;
 	}
-	.home-about-dante{
-		color:black;
-		text-align:center;
-		padding-top:4em;
-	}
+
 }
 
 /*portfolio
