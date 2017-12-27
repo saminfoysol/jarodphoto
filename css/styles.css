@@ -241,14 +241,9 @@ p:last_of-type{
 
 .home-about{
 	
-	background-color: white;
 	padding: 0em 0;
-	color:white;
-	background-repeat:no-repeat;
+	color:black;
 	background-color: #fff0f5;
-	background-attachment: fixed;
-	background-size:cover;
-	background-position: center;
 	
 }
 
@@ -260,18 +255,16 @@ p:last_of-type{
 		
 	}
 
-	.home-about-info{
-		transition:initial;
-		color: black;
-		text-align: center;
-		vertical-align: middle;
-		position:relative;
+.home-about-info{
+	
+	text-align: center;
+	text-align:center;
+	vertical-align: middle;
+	
+	position: relative;
 		top: 50%;
 		transform: translateY(-50%); 
-		
-	}
-
-
+}
 
 @media (min-width:60rem){
 	.newbox{
@@ -311,7 +304,17 @@ p:last_of-type{
 		padding-right:4em;
 	}
 
+	.home-about-dante {
 
+		display:none;
+		color:black;
+		width: 50%;
+		float:right;
+		text-align: center;
+		right:0;
+		position:relative;
+		
+	}
 
 
 }
