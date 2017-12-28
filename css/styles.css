@@ -136,10 +136,16 @@ p:last_of-type{
     -o-animation: fadein 6s; /* Opera */
 }
 
+
+
 @media (min-width: 60rem){
 	.button{
 		font-size: 1.5rem;
 	}
+}
+.button-port{
+	border-radius:8px;
+	font-size:1rem;
 }
 
 /*navbar
@@ -373,14 +379,21 @@ p:last_of-type{
 .port-item{
 	margin: 0;
 	position: relative;
+	background-color:black;
 	
 }
 
+
 .port-item img{
+	opacity:1;
 	display: block;
 
 }
 
+.port-item img:hover
+{
+	opacity:.7;
+}
 .port-desc{
 	position: absolute;
 	z-index:100;
@@ -396,6 +409,7 @@ p:last_of-type{
 
 .port-desc p{
 	margin: 1em;
+	font-size:1.45rem;
 }
 
 
@@ -404,12 +418,12 @@ p:last_of-type{
 		width: 33.33333333334%;
 		overflow:hidden;
 	}
-	.port-desc{
+	/*.port-desc{
 		transform: translateY(150%);
 	}
 	.port-item:hover .port-desc{
 		transform: translate(0%);
-	}
+	}*/
 }
 
 @media (min-width: 37rem) {
@@ -417,6 +431,142 @@ p:last_of-type{
 		width: 50%;
 		float: left;
 	}
+}
+
+/*gallery
+=======================*/
+
+.gallery-img img{
+	width:100%;
+}
+.column {
+  padding: 0 8px;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev{
+	left:0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 /*footer
